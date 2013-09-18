@@ -1,0 +1,7 @@
+@#auto-vendor-prefix#@
+
+@constant{ color:#505050 }
+@function(property){ color:@property }
+
+body { padding:20px; margin:0; font:normal 12px Arial; @constant; }
+div { @function('red'); }
