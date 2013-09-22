@@ -1,1 +1,1 @@
-body{padding:20px;margin:0;font:normal 12px Arial;color:#505050;}div{color:red;}
+@constant{color:#505050@function(property){color:@property}body{padding:20px;margin:0;font:normal 12px Arial;@constant;}div{@function('#A5E135');}

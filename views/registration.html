@@ -1,31 +1,31 @@
-<div><strong>Registration</strong></div>
+<div><strong>Registro</strong></div>
 <br />
 
 @{contentToggle(repository.isSuccess, 'success')}
 
 <form action="/" method="POST">
 
-<div>Registration type:</div>
+<div>Tipo de contenido:</div>
 <div>
 <select name="type">
 @{options(repository.type, model.type, 'name', 'id')}
 </select>
 </div>
 <br />
-<div>Name:</div>
+<div>Nombre:</div>
 <div>@{text('name')}</div>
 <br />
 <div>E-mail:</div>
 <div>@{text('email')}</div>
 <br />
 <!-- OR your custom definition -->
-<div>Phone:</div>
+<div>Telefono:</div>
 <div><input type="text" name="phone" value="@{model.phone}" /></div>
 <br />
-<div>Password:</div>
+<div>Contraseña:</div>
 <div>@{password('password')}</div>
 <br />
-<div>Country:</div>
+<div>Pais:</div>
 <div>
 <select name="country">
 @{options(repository.country, model.country)}
@@ -33,10 +33,10 @@
 </div>
 <br />
 <div>
-@{checkbox('terms', 'I agree')}
+@{checkbox('terms', 'Acepto')}
 </div>
 <br />
 <hr />
 <br />
-<div><button>SUBMIT</button></div>
+<div><button>Registrarse</button></div>
 </form>
